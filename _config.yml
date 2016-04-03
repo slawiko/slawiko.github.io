@@ -1,0 +1,4 @@
+name: slawiko blog
+url: https://slawiko.github.io
+permalink: pretty
+exclude: [node_modules, gulpfile.js]
