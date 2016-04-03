@@ -322,3 +322,110 @@ footer {
     color:#444;
   }
 }
+
+html {
+    color: white;
+}
+
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+}
+.parallax__group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+.parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.parallax__layer--back {
+    -webkit-transform: translateZ(-200px) scale(2);
+    transform: translateZ(-200px) scale(2);
+}
+
+.parallax__layer--deep {
+    -webkit-transform: translateZ(-300px) scale(3);
+    transform: translateZ(-300px) scale(3);
+}
+
+#info-block {
+    z-index: 3;
+}
+
+#info-block .parallax__layer--base {
+    background-color: rgb(45, 53, 74);
+}
+
+#vk-block .parallax__layer--back {
+    background-color: #45668e;
+}
+
+#vk-block {
+    z-index: 2;
+}
+
+#tw-block .parallax__layer--base {
+    background-color: #00aced;
+}
+
+#tw-block {
+    z-index: 3;
+}
+
+#gh-block .parallax__layer--deep {
+    background-color: rgb(51, 51, 51);
+}
+
+#gh-block {
+    z-index: 1;
+}
+
+#fb-block .parallax__layer--base {
+    background-color: rgb(59,89,152);
+}
+
+#fb-block {
+    z-index: 3;
+}
+
+#yt-block .parallax__layer--back {
+    background-color: #bb0000;
+}
+
+#yt-block {
+    z-index: 2;
+}
+
+#li-block .parallax__layer--base{
+    background-color: #007bb6;
+}
+
+#li-block {
+    z-index: 3;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+body {
+    margin: 0;
+}
+
