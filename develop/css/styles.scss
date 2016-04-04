@@ -1,3 +1,5 @@
+@import 'variables';
+
 html {
     color: white;
 }
@@ -46,7 +48,7 @@ html {
 }
 
 #vk-block .parallax__layer--back {
-    background-color: #45668e;
+    background-color: $vk-color;
 }
 
 #vk-block {
@@ -54,7 +56,7 @@ html {
 }
 
 #tw-block .parallax__layer--base {
-    background-color: #00aced;
+    background-color: $twitter-color;
 }
 
 #tw-block {
@@ -62,7 +64,7 @@ html {
 }
 
 #gh-block .parallax__layer--deep {
-    background-color: rgb(51, 51, 51);
+    background-color: $github-color;
 }
 
 #gh-block {
@@ -70,7 +72,7 @@ html {
 }
 
 #fb-block .parallax__layer--base {
-    background-color: rgb(59,89,152);
+    background-color: $facebook-color;
 }
 
 #fb-block {
@@ -78,7 +80,7 @@ html {
 }
 
 #yt-block .parallax__layer--back {
-    background-color: #bb0000;
+    background-color: $youtube-color;
 }
 
 #yt-block {
@@ -86,7 +88,7 @@ html {
 }
 
 #li-block .parallax__layer--base{
-    background-color: #007bb6;
+    background-color: $linkedin-color;
 }
 
 #li-block {
