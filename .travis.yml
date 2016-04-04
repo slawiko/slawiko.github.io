@@ -4,7 +4,7 @@ rvm:
 node_js:
   - "4"
 
-before_install: npm i
+before_install: sudo npm i
 install: gem install jekyll html-proofer
 
 before_script: npm run gulp
