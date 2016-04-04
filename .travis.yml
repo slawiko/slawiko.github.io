@@ -4,5 +4,5 @@ rvm:
 
 install: gem install jekyll html-proofer github-pages
 
-script: jekyll build && htmlproofer ./_site
+script: bundle exec jekyll build
 sudo: required
