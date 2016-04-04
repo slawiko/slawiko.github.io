@@ -18,3 +18,9 @@ gulp.task('serve', function() {
 		server: '.'
 	});
 });
+
+gulp.task('build', function() {
+	return  gulp.src('develop/css/*.scss')
+		.pipe(sass())
+		.pipe(gulp.dest('_site/css'));
+});
