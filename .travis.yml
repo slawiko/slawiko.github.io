@@ -2,9 +2,9 @@ language: ruby
 rvm:
  - 2.1
 
-before_install: npm i -g npm && node -v && npm i
+before_install: npm i -g npm && npm i -g n && n stable && node -v && npm i
 install: gem install jekyll html-proofer
 
-before_script: npm run gulp
+before_script: npm run gulp build
 script: jekyll build && htmlproofer ./_site
 sudo: required
