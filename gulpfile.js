@@ -6,12 +6,12 @@ const browserSync = require('browser-sync').create();
 
 
 gulp.task('styles', function() {
-	return  gulp.src('develop/stylesheets/*.scss')
+	return  gulp.src('develop/css/*.scss')
 		.pipe(sass())
-		.pipe(gulp.dest('stylesheets'));
+		.pipe(gulp.dest('_site/css'));
 });
 
-gulp.watch('develop/stylesheets/*', gulp.series('styles'));
+gulp.watch('develop/css/*', gulp.series('styles'));
 
 gulp.task('serve', function() {
 	browserSync.init({
