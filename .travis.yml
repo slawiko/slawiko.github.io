@@ -2,7 +2,7 @@ language: node_js
 node_js:
  - "5"
 
-before_install: npm i -g npm && rvm get stable
+before_install: npm i -g npm && rvm get head --auto-dotfiles && rvm get stable
 install: npm i && gem install jekyll html-proofer
 
 before_script: npm run gulp build
