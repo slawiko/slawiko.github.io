@@ -1,26 +1,26 @@
 {
-    "name": "slawiko.github.io",
-    "version": "1.0.0",
-    "description": "",
-    "main": "gulpfile.js",
-    "dependencies": {},
-    "devDependencies": {
-        "browser-sync": "^2.11.2",
-        "gulp": "github:gulpjs/gulp#4.0",
-        "gulp-sass": "^2.2.0"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "gulp": "./node_modules/.bin/gulp"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/slawiko/slawiko.github.io.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/slawiko/slawiko.github.io"
-    },
-    "homepage": "https://github.com/slawiko/slawiko.github.io#readme"
+  "name": "slawiko.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slawiko/slawiko.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slawiko/slawiko.github.io"
+  },
+  "homepage": "https://github.com/slawiko/slawiko.github.io#readme"
 }
