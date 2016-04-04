@@ -5,14 +5,12 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.11.2",
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-sass": "^2.2.0",
-    "gulp-watch": "^4.3.5"
+    "browser-sync": "^2.11.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "./node_modules/.bin/gulp"
+    "browser-sync": "browser-sync start --server _site",
+    "jekyll": "jekyll build"
   },
   "repository": {
     "type": "git",
