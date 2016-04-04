@@ -2,7 +2,7 @@ language: ruby
 rvm:
  - 2.1
 
-before_install: sudo npm i
+before_install: npm i
 install: gem install jekyll html-proofer
 
 before_script: npm run gulp
