@@ -1,10 +1,8 @@
-language: node_js
-node_js:
- - "5"
+language: ruby
+rvm:
+ - 2.1
 
-before_install: npm i -g npm && rvm get head --auto-dotfiles && rvm get stable
-install: npm i && gem install jekyll html-proofer
+install: gem install jekyll html-proofer
 
-before_script: npm run gulp build
 script: jekyll build && htmlproofer ./_site
 sudo: required
