@@ -2,13 +2,17 @@
   "name": "slawiko.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.11.2"
+    "browser-sync": "^2.11.2",
+    "del": "^2.2.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-shell": "^0.5.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "browser-sync": "browser-sync start --server _site",
     "jekyll": "jekyll build"
   },
@@ -16,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/slawiko/slawiko.github.io.git"
   },
-  "author": "",
+  "author": "slawiko",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/slawiko/slawiko.github.io"
