@@ -4,7 +4,6 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const debug = require('gulp-debug');
-const insert = require('gulp-insert');
 const shell = require('gulp-shell');
 const del = require('del');
 
@@ -24,10 +23,10 @@ gulp.task(function clean_scripts() {
 });
 
 gulp.task(function styles() {
-	return gulp.src(['_scss/*.scss'])
+	return gulp.src(['scss/*.scss'])
 		.pipe(debug())
 		.pipe(sass())
-		.pipe(gulp.dest(pubDir + '/css'));
+		.pipe(gulp.dest('css'));
 });
 
 gulp.task(function scripts() {
@@ -37,7 +36,7 @@ gulp.task(function scripts() {
 });
 
 gulp.task(function watch() {
-	gulp.watch('_scss/*.scss', gulp.series(
+	gulp.watch('scss/*.scss', gulp.series(
 		'clean_styles',
 		'styles'
 	));
