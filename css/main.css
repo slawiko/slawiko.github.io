@@ -1,6 +1,13 @@
-html {
-  background-color: #45668e;
-  color: white; }
-
 body {
-  margin: 0; }
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif; }
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #45668e;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
